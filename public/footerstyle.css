@@ -1,0 +1,32 @@
+.footercomp{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+
+}
+
+.legal{
+    margin-right: 20px;
+    font-size: 13px;
+    margin-top: 15px;
+color: white;
+}
+
+.center{
+    margin-right: 60px;
+    font-size: 13px;
+    margin-top: 15px;
+    color: white;
+
+}
+.contact{
+    margin-left:20px;
+    font-size: 13px;
+    margin-top: 15px;
+    color: white;
+
+}
+h4{
+    font-weight:550;
+}

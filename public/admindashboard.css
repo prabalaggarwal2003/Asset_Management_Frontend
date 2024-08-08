@@ -1,0 +1,133 @@
+.homelinklist{
+    display: inline;
+    padding-left: 25px;
+    font-size: 29px;
+    margin: 14px;
+
+}
+
+.homelink{
+    padding-top: 35px;
+    padding-left: 315px;
+}
+
+.lab{
+    width: 80px;
+    height: 48px;
+}
+
+*{
+    margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.logo{
+    width: 170px;
+    height: 100px;
+}
+
+.header{
+    display: flex;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* .right{
+    margin-right: 380px;
+    margin-left: 330px;
+} */
+
+.idhar{
+    margin-left: 40px;
+}
+.udhar{
+    background-color: red;
+    width: 180px;
+    height: 728px;
+    margin-top: -72px;
+    margin-right: 225px;
+}
+
+.admin-animation{
+    height: 500px;
+    width: 500px;
+}
+
+.parent{
+display: flex;
+justify-content: space-around;
+}
+
+.view-report{
+    font-size: 22px;
+    color: black;
+    background-color: white;
+    border-radius:10px;
+    padding: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.4s;
+    width: 190px;
+    height: 50px;
+    margin-left: 40px;
+}
+.view-report:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+#title{
+	font-size: 45px;
+}
+
+#subtitle{
+	font-size: 35px;
+}
+.decor{
+    width: 550px;
+    height: 6px;
+    background-color: red;
+}
+.decor-2{
+    width: 570px;
+    height: 6px;
+    background-color: red;
+    margin-left: 478px;
+}
+.update-status{
+    text-align: center;
+    font-size: 35px;
+}
+.status-form{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+
+.hello{
+    color: red;
+}
+
+table{
+    margin: 35px;
+}
+th, td{
+    font-size: 15px;
+}
+
+.h2{
+    text-align: center;
+}

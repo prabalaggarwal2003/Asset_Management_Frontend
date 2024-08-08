@@ -1,0 +1,180 @@
+.homelinklist{
+    display: inline;
+    padding-left: 25px;
+    font-size: 29px;
+    margin: 14px;
+
+}
+
+.homelink{
+    padding-top: 35px;
+    padding-left: 446px;
+}
+
+.lab{
+    width: 80px;
+    height: 48px;
+}
+
+*{
+    margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+}
+.header{
+    display: flex;
+}
+.bpit{
+    height: 70px;
+    width: 140px;
+    
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.right{
+    margin-right: 330px;
+    margin-left: 380px;
+}
+
+.left{
+    margin-left: 40px;
+}
+
+.navigation{
+    text-decoration: none;
+    color: black ;
+}
+
+.navigation:hover{
+color:  rgb(113, 113, 235);
+}
+
+
+label{
+    font-size: 21px;
+	margin-bottom: px;
+}
+
+.in{
+    width: 250px;
+    height: 30px;
+    border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	border-bottom: transparent;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.in:focus{
+	outline: none;
+    background-color: transparent;
+	border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	border-bottom: transparent;
+}
+
+input::file-selector-button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+cursor: pointer;
+}
+
+.form1{
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.btn{
+    font-size: 22px;
+    color: black;
+    background-color: white;
+    border-radius:10px;
+    padding: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-right: 20px;
+    width: 120px;
+    height: 50px;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+textarea{
+    border-radius: 10px;
+    width: 350px;
+    height: 150px;
+    font-size: 20px;
+}
+
+
+select{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.per{
+    display:flex ;
+    justify-content: space-between;
+    
+    
+
+}
+/* form{
+    padding: 35px 40px 60px 10px;
+    border:transparent;
+    width: 80%;
+ margin-left: 111px;
+ box-shadow: 10px 12px 16px 12px rgba(0, 0, 0, 0.24 );
+ border-radius: 16px;
+margin-bottom: 50px;
+} */
+
+form label{
+    font-weight: 500;
+}
+.loc{
+    display:flex ;
+    justify-content: space-evenly;
+
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    background-color: transparent;
+}
+
+.strip1{
+    background-color: #dad0d054;
+    padding: 30px 40px 30px 40px;
+
+}
+.strip2{
+    background-color: #dad0d054;
+    padding: 30px 40px 30px 40px;
+}
+.strip3{
+    background-color: #dad0d054;
+    padding: 30px 40px 30px 40px;
+
+}

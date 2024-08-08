@@ -1,0 +1,236 @@
+.homelinklist{
+    display: inline;
+    padding-left: 25px;
+    font-size: 29px;
+    margin-right: 14px;
+
+}
+
+.homelink{
+    padding-top: 35px;
+    padding-left: 315px;
+    
+}
+
+.lab{
+    width: 80px;
+    height: 48px;
+}
+
+*{
+    margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.logo{
+    width: 170px;
+    height: 100px;
+}
+
+.header{
+    display: flex;
+}
+.bpit{
+    height: 70px;
+    width: 140px;
+    
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.right{
+    margin-right: 380px;
+    margin-left: 330px;
+}
+
+.left{
+    margin-left: 40px;
+}
+
+.navigation{
+    text-decoration: none;
+    color: black ;
+}
+
+.navigation:hover{
+color:  rgb(113, 113, 235);
+}
+
+
+
+
+/* .btn{
+    width: 220px;
+    height: 70px;
+	cursor: pointer;
+	border-radius: 60px;
+	border: transparent;
+	background-color: rgb(113, 113, 235);
+	color: white;
+	font-size: 23px;
+	box-shadow: 0px 12px 16px 0 rgba(0, 0, 0, 0.24 ), 0 17px 50px 0 rgba(0, 0,0 , 0);
+
+} */
+
+#title{
+	font-size: 45px;
+}
+
+#subtitle{
+	font-size: 35px;
+}
+
+.hello{
+    color: rgb(113, 113, 235);
+}
+.p{
+    margin: 10px;
+}
+#reports{
+    padding: 8px;
+    width: 70%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+#reports th{
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+
+}
+#reports td{
+    border: 2px solid black;
+}
+button{
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border-radius:10px;
+    padding: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.table{
+display: flex;
+justify-content: center;
+}
+
+tr{
+    font-size: 25px;
+    border: 2px solid black;
+
+}
+
+th{
+    padding: 15px;
+    color: white;
+    background-color: black;
+}
+
+td{
+    padding: 8px;
+    background-color: white;
+}
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.p{
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    height: 600px;
+}
+.one{
+    margin-left: 75px;
+    margin-top: 91px;
+    width: 60%;
+}
+.two{
+    width: 30%;
+    margin-right: 150px;
+    margin-bottom: 160px;
+}
+.form-animation{
+    height: 200%;
+    width: 200%;
+}
+
+.how-to{
+    background-color:#dad0d054;
+z-index: 1;
+}
+.how-report{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500; 
+    margin-bottom: 1.2rem;
+    color: #000;
+}
+
+.history-data{
+    margin-left: 40px;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.decor{
+    width: 550px;
+    height: 6px;
+    background-color: red;
+}
+
+.decor2{
+    width: 550px;
+    height: 6px;
+    background-color: red;
+    margin-left: 505px;
+}
+
+.input-history{
+    display: flex;
+    justify-content: center;
+}
+
+.history-submit{
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border-radius:10px;
+    padding: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.4s;
+    height: 50px;
+}
+
+.history-submit:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
