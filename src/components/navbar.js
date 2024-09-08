@@ -1,4 +1,8 @@
 export default function Navbar(){
+
+  
+
+
     return(
        <>
        <header className="header">
@@ -13,7 +17,7 @@ export default function Navbar(){
             <li  className="upperlist"><a  className="navigation" href="#vision">Vision Mission</a></li>
           </ul>
        </div>
-       <a href='#signin'><button class="button-28" role="button">Sign In</button></a>
+       <a href="#signin"><button class="button-28" role="button">Sign In</button></a>
     </nav>
 
 </header>

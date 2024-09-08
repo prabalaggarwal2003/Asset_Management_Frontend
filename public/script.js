@@ -16,15 +16,15 @@ document.querySelectorAll('a[href^="#contactus"]').forEach(anchor => {
         });
     });
 });
-// document.querySelectorAll('a[href^="#signin"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
+document.querySelectorAll('a[href^="#signin"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 document.querySelectorAll('a[href^="#vision"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

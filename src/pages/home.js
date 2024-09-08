@@ -12,30 +12,30 @@ export default function Home(){
     const [password, setPassword]=useState('');
     const navigate = useNavigate();
     
-//     const handleLogin = async(e) =>{
-//       e.preventDefault();
-//       fakeLogin(username, password);
+    const handleLogin = async(e) =>{
+      e.preventDefault();
+      fakeLogin(username, password);
       
-//     };
+    };
 
-//     const fakeLogin=(username, password) =>{
-//       return new Promise((resolve)=>{
-//         setTimeout(()=>{
-//           if(username==='prabal20csea22@bpitindia.edu.in' && password==='prabal'){
-//             resolve(true);
-//             navigate('/dashboard');
-//           }
-//           else if(username==='achalkaushik@bpitindia.edu.in' && password==='achalsir'){
-// resolve(true);
-// navigate('/admin_dashboard');
-//           }
-//           else{
-//             resolve(false);
-//             alert("Enter Valid Credentials")
-//           }
-//           },1000);
-//         });
-//     };
+    const fakeLogin=(username, password) =>{
+      return new Promise((resolve)=>{
+        setTimeout(()=>{
+          if(username==='prabal20csea22@bpitindia.edu.in' && password==='prabal'){
+            resolve(true);
+            navigate('/dashboard');
+          }
+          else if(username==='achalkaushik@bpitindia.edu.in' && password==='achalsir'){
+resolve(true);
+navigate('/admin_dashboard');
+          }
+          else{
+            resolve(false);
+            alert("Enter Valid Credentials")
+          }
+          },1000);
+        });
+    };
 
   
     return(
@@ -61,6 +61,37 @@ export default function Home(){
 <div className='Bpart'>
 <Lottie className='anima' animationData={animation}/> </div>
  </section>
+
+ <br/>
+ <br/>
+
+<div className='signin-form' id="signin">
+
+  <form>
+    <label>Email ID:</label>
+    <br/>
+
+    <input type="text" onChange={(e) => setUsername(e.target.value)} required/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <label>Password:</label>
+    <br/>
+
+    <input type="password" onChange={(e) => setPassword(e.target.value)} required/>
+    <br/>
+    <br/>
+
+    <input type="submit" value="Submit" onClick={handleLogin} className="btn" />
+    </form>
+
+</div>
+
+<br/>
+<br/>
+<br/>
 
 <div className='about' id='aboutus'> <br/><br/>
   <h1 className='headingA'>ABOUT US</h1>
