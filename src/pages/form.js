@@ -50,7 +50,7 @@ export default function Form() {
     };
 
     try {
-      const res = await fetch("http://localhost:9010/issue/", {
+      const res = await fetch("/issue/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(issue),

@@ -3,6 +3,9 @@ import Home from './pages/home'
 import Dashboard from './pages/dashboard'
 import Admin_dashboard from './pages/admin_dashboard'
 import Form from './pages/form'
+import axios from 'axios'
+
+axios.defaults.baseURL = process.env.URI
 
 export default function App() {
   return (

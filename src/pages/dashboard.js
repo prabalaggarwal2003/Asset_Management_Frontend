@@ -33,7 +33,7 @@ export default function Dashboard() {
   const handleRefresh = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:9010/issues/${enrollmentno}`
+        `/issues/${enrollmentno}`
       );
       if (res.data) {
         const reversedProductsEnro = res.data.reverse();

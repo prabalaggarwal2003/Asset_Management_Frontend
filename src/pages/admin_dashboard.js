@@ -35,7 +35,7 @@ export default function Admin_dashboard() {
 
 
   const handleClick = async () => {
-    const res = await axios.get("http://localhost:9010/issue/");
+    const res = await axios.get("/issue/");
     console.log(res.data);
     const reversedProducts = res.data.reverse();
     setData(res.data);
@@ -64,7 +64,7 @@ export default function Admin_dashboard() {
   };
 
   const handleUpdate = async ()=> {
-    axios.put(`http://localhost:9010/issueUpdate/${complaintId}`,update)
+    axios.put(`/issueUpdate/${complaintId}`,update)
     .then(response => {console.log("status updated")});
     navigate("/admin_dashboard");
   
