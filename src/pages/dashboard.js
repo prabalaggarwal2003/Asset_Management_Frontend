@@ -37,6 +37,7 @@ export default function Dashboard() {
       );
       if (res.data) {
         const reversedProductsEnro = res.data.reverse();
+        console.log(res);
         setProducts(reversedProductsEnro);
       } else {
         setProducts([]);
