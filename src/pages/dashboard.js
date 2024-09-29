@@ -35,9 +35,10 @@ export default function Dashboard() {
       const res = await axios.get(
         `/issues/${enrollmentno}`
       );
+      console.log(res);
+
       if (res.data) {
         const reversedProductsEnro = res.data.reverse();
-        console.log(res);
         setProducts(reversedProductsEnro);
       } else {
         setProducts([]);
