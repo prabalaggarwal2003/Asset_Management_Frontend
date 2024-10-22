@@ -33,9 +33,10 @@ export default function Admin_dashboard() {
 
   
 
+  
 
   const handleClick = async () => {
-    const res = await axios.get("/issue/");
+    const res = await axios.get("https://asset-management-backend-postgres-3.onrender.com/issue/");
     console.log(res.data);
     const reversedProducts = res.data.reverse();
     setData(res.data);
@@ -64,7 +65,7 @@ export default function Admin_dashboard() {
   };
 
   const handleUpdate = async ()=> {
-    axios.put(`/issueUpdate/${complaintId}`,update)
+    axios.put(`https://asset-management-backend-postgres-3.onrender.com/issueUpdate/${complaintId}`,update)
     .then(response => {console.log("status updated")});
     navigate("/admin_dashboard");
   
