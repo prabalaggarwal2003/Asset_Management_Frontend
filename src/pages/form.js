@@ -50,6 +50,7 @@ export default function Form() {
     };
 
     try {
+      const apiUrl = process.env.REACT_APP_API_URL;
       const res = await fetch(`${apiUrl}/issue/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
