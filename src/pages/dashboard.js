@@ -30,24 +30,41 @@ export default function Dashboard() {
   //   }
   // };
 
+  // const handleRefresh = async () => {
+  //   try {
+  //     const res = await axios.get(
+  //       `/issues/${enrollmentno}`
+  //     );
+  //     console.log(res);
+
+  //     if (res.data) {
+  //       const reversedProductsEnro = res.data.reverse();
+  //       setProducts(reversedProductsEnro);
+  //     } else {
+  //       setProducts([]);
+  //     }
+  //   } catch (error) {
+  //     console.error("Error fetching history:", error);
+  //   }
+  // };
+
   const handleRefresh = async () => {
     try {
-      const res = await axios.get(
-        `/issues/${enrollmentno}`
-      );
-      console.log(res);
-
-      if (res.data) {
+      const res = await axios.get(`/issues/${enrollmentno}`);
+      console.log(res.data);  // Check the structure of the data
+  
+      if (Array.isArray(res.data)) {
         const reversedProductsEnro = res.data.reverse();
         setProducts(reversedProductsEnro);
       } else {
-        setProducts([]);
+        console.error("Expected an array but received:", res.data);
+        setProducts([]);  // Set empty array if data is not as expected
       }
     } catch (error) {
       console.error("Error fetching history:", error);
     }
   };
-
+  
   return (
     <div>
 
