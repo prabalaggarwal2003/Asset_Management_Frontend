@@ -49,27 +49,22 @@ export default function Dashboard() {
   // };
 
   const handleRefresh = async () => {
-    try {
-      const apiUrl = process.env.REACT_APP_API_URL;  // Access backend URL from environment variable
-      const res = await axios.get(`${apiUrl}/issues/${enrollmentno}`, {
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-      console.log(res.data);  // Check the structure of the data
-  
-      if (Array.isArray(res.data)) {
-        const reversedProductsEnro = res.data.reverse();
-        setProducts(reversedProductsEnro);
-      } else {
-        console.error("Expected an array but received:", res.data);
-        setProducts([]);  // Set empty array if data is not as expected
-      }
-    } catch (error) {
-      console.error("Error fetching history:", error);
+  try {
+    const res = await axios.get(`/issues/${enrollmentno}`);
+    console.log(res.data);  // Check the structure of the data
+
+    if (Array.isArray(res.data)) {
+      const reversedProductsEnro = res.data.reverse();
+      setProducts(reversedProductsEnro);
+    } else {
+      console.error("Expected an array but received:", res.data);
+      setProducts([]);  // Set empty array if data is not as expected
     }
-  };
-  
+  } catch (error) {
+    console.error("Error fetching history:", error);
+  }
+};
+
   return (
     <div>
 
