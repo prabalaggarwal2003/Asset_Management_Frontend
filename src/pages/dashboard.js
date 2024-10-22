@@ -51,7 +51,11 @@ export default function Dashboard() {
   const handleRefresh = async () => {
     try {
       const apiUrl = process.env.REACT_APP_API_URL;  // Access backend URL from environment variable
-      const res = await axios.get(`${apiUrl}/issues/${enrollmentno}`);
+      const res = await axios.get(`${apiUrl}/issues/${enrollmentno}`, {
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
       console.log(res.data);  // Check the structure of the data
   
       if (Array.isArray(res.data)) {
